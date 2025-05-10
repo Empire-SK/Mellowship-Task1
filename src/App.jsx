@@ -2,6 +2,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Tablist from './Components/tab-list';
 import './App.css';
+import Ataglance from './Components/Ataglance';
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <Navbar />
             <Header />
             <Tablist/>
+            <Ataglance/>
         </div>
     );
 }

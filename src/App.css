@@ -32,6 +32,97 @@ body {
   align-items: center;
 }
 
+.at-a-glance {
+  display: flex;
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+
+.at-a-glance-item1,
+.at-a-glance-item2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.at-a-glance.bar {
+  display: flex;
+  height: 7px;
+  border: none;
+  margin: 0 16px;
+  overflow: hidden;
+  /* border-radius: 4px; */
+  background-color: transparent;
+  max-width: 1164px;
+  width: 100%;
+  margin: 2px auto;
+  flex-direction: row;
+}
+
+.at-a-glance.bar hr {
+  border: none;
+  margin: 0;
+  height: 100%;
+}
+
+.at-a-glance-violet {
+  background-color: #b45eff;
+  width: 85%;
+  /* Adjust based on actual guest breakdown */
+}
+
+.at-a-glance-green {
+  background-color: #00e676;
+  width: 6%;
+}
+
+.at-a-glance-white {
+  background-color: #ffffff;
+  width: 2%;
+}
+
+.at-a-glance-royalblue {
+  background-color: #7C9BF2;
+  width: 7%;
+}
+
+.text-green {
+  color: #2eaf6d;
+}
+
+.text-violet {
+  color: #984fd3;
+}
+
+.text-royalblue {
+  color: #7c9bf2;
+}
+
+.at-a-glance-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  font-size: smaller;
+  padding: 0px;
+  margin: 3px;
+}
+
+
+.p1 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+}
+
+
 .nav-item {
   display: flex;
   flex-direction: row;
@@ -86,7 +177,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-right: 246px;
+  padding-right: 371px;
 }
 
 /* Each group of tabs */
@@ -127,4 +218,25 @@ body {
 .p2 {
   padding: 6px;
   color: #999999;
+}
+
+
+.px-1 {
+  padding: 0 4px;
+}
+
+.px-2 {
+  padding: 0 8px;
+}
+
+.py-1 {
+  padding: 4px 0;
+}
+
+.py-2 {
+  padding: 8px 0;
+}
+
+.py-3 {
+  padding: 16px 0;
 }
