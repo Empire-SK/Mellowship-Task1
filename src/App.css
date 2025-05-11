@@ -35,7 +35,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .at-a-glance {
@@ -569,7 +569,7 @@ select {
   .guest-registered,
   .guest-actions {
     min-width: 0;
-  
+
     flex: 1;
     /* Allow elements to share space equally or adjust as needed */
     justify-content: flex-start;
@@ -670,32 +670,53 @@ select {
 }
 
 @media (max-width: 480px) {
+
+  .h2{
+    font-size: 14px;
+  }
   .container {
     padding: 0.5rem;
   }
 
   .guest-header h2 {
     font-size: 18px;
-    white-space: normal; /* Allow text to wrap */
-    line-height: 1.2; /* Adjust line height for better readability */
-    max-width: 60%; /* Limit the width to force wrapping into two lines */
-    margin: 0; /* Remove default margin to control spacing */
-    text-align: left; /* Align text to the left for consistency */
+    white-space: normal;
+    line-height: 1.2;
+    max-width: 60%;
+    margin: 0;
+    text-align: left;
   }
 
   .guest-filters {
-    flex-direction: row; /* Change to row to place elements side by side */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute space between h2 and buttons */
-    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single line */
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     width: 100%;
   }
 
-  select,
-  .search-wrapper,
+  select {
+    font-size: 12px;
+    padding: 10px 6px;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  .search-wrapper {
+    position: relative;
+  }
+
   .search-input {
     font-size: 12px;
-    padding: 8px 36px;
+    padding: 8px 6px;
+    padding-left: 30px;
+    margin-top: 8px;
+  }
+
+  .search-icon {
+    padding: 0;
+    left: 8px;
+    top: 14px;
+    transform: translateY(0);
   }
 
   .guest-table {
@@ -761,9 +782,13 @@ select {
   }
 
   .filter-btn {
-    font-size: 12px; /* Reduce font size to fit better */
-    padding: 6px 12px; /* Adjust padding for smaller screens */
-    flex: 0 0 auto; /* Prevent the button from growing */
-    white-space: nowrap; /* Keep button text in a single line */
+    font-size: 12px;
+    /* Reduce font size to fit better */
+    padding: 6px 12px;
+    /* Adjust padding for smaller screens */
+    flex: 0 0 auto;
+    /* Prevent the button from growing */
+    white-space: nowrap;
+    /* Keep button text in a single line */
   }
 }
