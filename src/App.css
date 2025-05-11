@@ -9,14 +9,14 @@ html, body {
   font-family: sans-serif;
   font-weight: 100;
   background: linear-gradient(to bottom,
-    #2a2444 0%,    /* Dark purple at the top */
-    #221f3a 15%,   /* Slightly lighter purple */
-    #1a1c30 30%,   /* Transition to a darker shade */
-    #121a27 45%,   /* Deep blue-gray */
-    #0d171f 60%,   /* Darker still */
-    #081215 75%,   /* Very dark green-gray */
-    #050a0d 85%,   /* Near black */
-    #020304 100%   /* Almost pure black at the bottom */
+    #2a2444 0%,  
+    #221f3a 15%,   
+    #1a1c30 30%,  
+    #121a27 45%,   
+    #0d171f 60%,   
+    #081215 75%,  
+    #050a0d 85%,   
+    #020304 100%   
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -299,6 +299,11 @@ select {
   margin-right: -6px;
 }
 
+.control .underline{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .filter-btn {
   display: flex;
   align-items: center;
@@ -542,7 +547,7 @@ select {
 
   .guest-table {
     padding: 3px;
-    padding-bottom: 24px; /* Maintain blank space for consistency */
+    padding-bottom: 24px; 
   }
 
   .guest-row {

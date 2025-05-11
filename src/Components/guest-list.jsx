@@ -33,7 +33,7 @@ function GuestList() {
                 </div>
 
                 <div className="control">
-                    <button className="filter-btn">
+                    <button className="filter-btn underline">
                         Select Multiple
                         <span className="divider"></span>
                         <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon" />
